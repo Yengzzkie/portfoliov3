@@ -1,6 +1,7 @@
 import Header from "./ui/Header";
 import Hero from "./Hero";
 import About from "./About";
+import Projects from "./Projects"
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <Header />
       <Hero />
       <About />
+      <Projects />
     </main>
   );
 };

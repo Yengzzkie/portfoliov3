@@ -64,6 +64,17 @@ nav * {
   font-style: normal;
 }
 
+/* .project-title::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 2px;
+  width: 75%;
+  top: 50%;
+  right: 0;
+
+} */
+
 
 /* EMBLA CAROUSEL STYLES */
 .embla {

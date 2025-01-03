@@ -50,7 +50,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col w-full h-[70vh] max-w-5xl mx-auto px-4"
+      className="flex flex-col w-full h-fit my-28 max-w-5xl mx-auto px-4"
     >
       <div className="flex items-center h-fit">
         <BoxReveal>
