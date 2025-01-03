@@ -1,16 +1,41 @@
 import { BoxReveal } from "./ui/BoxReveal";
-import { CodeSquareIcon } from "lucide-react";
+import { CodeSquareIcon, CurlyBracesIcon, ServerIcon } from "lucide-react";
 
 const FE_TOOLS = [
   "HTML",
   "CSS",
   "Javascript",
-  "HTML",
-  "CSS",
-  "Javascript",
-  "HTML",
-  "CSS",
-  "Javascript",
+  "TailwindCSS",
+  "React",
+  "Zustand",
+  "Nodemailer",
+  "ShadCN",
+  "MaterialUI",
+  "AceternityUI",
+  "MagicUI",
+  "Chakra UI",
+  "Axios"
+];
+
+const BE_TOOLS = [
+  "NextJS",
+  "Next-auth",
+  "NodeJS",
+  "Express",
+  "Postgres",
+  "SQL",
+  "Prisma",
+  "MongoDB",
+  "Mongoose"
+];
+
+const DEVOPS_TOOLS = [
+  "Git",
+  "Heroku",
+  "AWS",
+  "Supabase",
+  "Netlify",
+  "Vercel",
 ];
 
 const Badge = ({ text }) => {
@@ -37,9 +62,9 @@ const About = () => {
         <div className="w-[80%] border border-zinc-500"></div>
       </div>
 
-      <div className="grid grid-cols-[auto,300px] gap-8 mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[auto,300px] gap-8 mt-8">
         <BoxReveal>
-          <p className="">
+          <p className="text-sm lg:text-base">
             <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
               L
             </span>
@@ -60,48 +85,48 @@ const About = () => {
         </BoxReveal>
 
         <div>
-        {/* FRONTEND TOOLS */}
+          {/* FRONTEND TOOLS */}
           <BoxReveal>
             <div className="mb-4">
-                <div className="flex items-center mb-2">
-                  <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
-                  <p className="text-lg font-semibold">Frontend Tools</p>
-                </div>
-                <div className="flex flex-wrap">
-                  {FE_TOOLS.map((tool) => (
-                    <Badge text={tool} />
-                  ))}
-                </div>
+              <div className="flex items-center mb-2">
+                <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
+                <p className="text-lg font-semibold">Frontend Tools</p>
+              </div>
+              <div className="flex flex-wrap">
+                {FE_TOOLS.map((tool) => (
+                  <Badge text={tool} />
+                ))}
+              </div>
             </div>
           </BoxReveal>
 
           {/* BACKEND TOOLS */}
           <BoxReveal>
             <div className="mb-4">
-                <div className="flex items-center mb-2">
-                  <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
-                  <p className="text-lg font-semibold">Backend Tools</p>
-                </div>
-                <div className="flex flex-wrap">
-                  {FE_TOOLS.map((tool) => (
-                    <Badge text={tool} />
-                  ))}
-                </div>
+              <div className="flex items-center mb-2">
+                <CurlyBracesIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
+                <p className="text-lg font-semibold">Backend Tools</p>
+              </div>
+              <div className="flex flex-wrap">
+                {BE_TOOLS.map((tool) => (
+                  <Badge text={tool} />
+                ))}
+              </div>
             </div>
           </BoxReveal>
 
           {/* DEVOPS TOOLS */}
           <BoxReveal>
             <div className="mb-4">
-                <div className="flex items-center mb-2">
-                  <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
-                  <p className="text-lg font-semibold">Other Tools</p>
-                </div>
-                <div className="flex flex-wrap">
-                  {FE_TOOLS.map((tool) => (
-                    <Badge text={tool} />
-                  ))}
-                </div>
+              <div className="flex items-center mb-2">
+                <ServerIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
+                <p className="text-lg font-semibold">Other Tools</p>
+              </div>
+              <div className="flex flex-wrap">
+                {DEVOPS_TOOLS.map((tool) => (
+                  <Badge text={tool} />
+                ))}
+              </div>
             </div>
           </BoxReveal>
         </div>
