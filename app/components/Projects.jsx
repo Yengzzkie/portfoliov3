@@ -1,112 +1,20 @@
 import { BoxReveal } from "./ui/BoxReveal";
 import { AnimatedCard } from "./ui/3DCard";
-
-const FEATURED_PROJECTS = [
-  {
-    title: "Yengflix v3",
-    name: "Yengflix v3",
-    link: "https://yengflix.com/",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit  consectetur adipisicing eli  consectetur adipisicing eli.",
-    img: "/yengflixv3.png",
-    tools: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "TailwindCSS",
-      "React",
-      "Zustand",
-      "Nodemailer",
-      "ShadCN",
-      "MaterialUI",
-      "AceternityUI",
-      "MagicUI",
-      "Chakra UI",
-      "Axios",
-    ],
-  },
-  {
-    title: "AnimHey!",
-    name: "AnimHey!",
-    link: "https://animhey.netlify.app/",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit  consectetur adipisicing eli  consectetur adipisicing eli.",
-    img: "/animhey.png",
-    tools: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "TailwindCSS",
-      "React",
-      "Zustand",
-      "Nodemailer",
-      "ShadCN",
-      "MaterialUI",
-      "AceternityUI",
-      "MagicUI",
-      "Chakra UI",
-      "Axios",
-    ],
-  },
-  {
-    title: "Pasalubong 905",
-    name: "Pasalubong 905!",
-    link: "https://pasalubong-905.netlify.app/",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit  consectetur adipisicing eli  consectetur adipisicing eli.",
-    img: "/pasalubong905.png",
-    tools: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "TailwindCSS",
-      "React",
-      "Zustand",
-      "Nodemailer",
-      "ShadCN",
-      "MaterialUI",
-      "AceternityUI",
-      "MagicUI",
-      "Chakra UI",
-      "Axios",
-    ],
-  },
-  {
-    title: "Pasalubong 905",
-    name: "Pasalubong 905!",
-    link: "https://pasalubong-905.netlify.app/",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit  consectetur adipisicing eli  consectetur adipisicing eli.",
-    img: "/pasalubong905.png",
-    tools: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "TailwindCSS",
-      "React",
-      "Zustand",
-      "Nodemailer",
-      "ShadCN",
-      "MaterialUI",
-      "AceternityUI",
-      "MagicUI",
-      "Chakra UI",
-      "Axios",
-    ],
-  },
-];
+import { FEATURED_PROJECTS } from "../utils/featured";
 
 const Badge = ({ text }) => {
-    return (
-      <span className="text-xs bg-[var(--primary-light)] px-1 py-0.5 mr-1.5 mb-1 rounded-sm">
-        {text}
-      </span>
-    );
-  };
+  return (
+    <span className="text-xs bg-[var(--primary-light)] px-1 py-0.5 mr-1.5 mb-1 rounded-sm">
+      {text}
+    </span>
+  );
+};
 
 const About = () => {
   return (
     <section
-      id="about"
-      className="flex flex-col w-full h-fit my-24 max-w-5xl mx-auto px-4"
+      id="projects"
+      className="flex flex-col w-full h-fit my-24 max-w-5xl mx-auto px-4 overflow-hidden"
     >
       <div className="flex items-center h-fit">
         <div className="w-[80%] border border-zinc-500 pl-4"></div>
@@ -144,25 +52,43 @@ const About = () => {
             />
             <div className="max-w-[350px]">
               <div className="flex items-center">
-                <h1 className="font-bold relative text-nowrap">
-                  {project.name}
-                </h1>
+                <h1 className="font-bold relative text-nowrap">Overview</h1>
                 <div className="w-[80%] border border-zinc-500 pl-4 ml-2"></div>
               </div>
 
-              <p className="text-sm text-[var(--primary-content)] text-left">
-                {project.description}
-              </p>
+              <BoxReveal>
+                <p className="text-sm text-[var(--primary-content)] text-left">
+                  {project.overview || ""}
+                </p>
+              </BoxReveal>
 
-              <h1 className="font-bold mt-4">Tools used</h1>
-              <div className="flex flex-wrap">
-                {project.tools.map((tool) => (
-                  <Badge text={tool} />
-                ))}
+              <div className="flex items-center mt-4">
+                <h1 className="font-bold relative text-nowrap">Tools used</h1>
+                <div className="w-[80%] border border-zinc-500 pl-4 ml-2"></div>
               </div>
+
+              <BoxReveal>
+                <div className="flex flex-wrap">
+                  {project.tools.map((tool) => (
+                    <Badge text={tool} />
+                  ))}
+                </div>
+              </BoxReveal>
             </div>
           </div>
         ))}
+      </div>
+
+      <h1 className="text-3xl font-bold mt-10">Other Projects</h1>
+      <div className="mt-6">
+        <BoxReveal>
+          <p className="text-sm lg:text-base">
+            <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
+              I
+            </span>
+            decided to include the small projects I build from when I was just learning to code to remind myself of how far I am on my coding journey ("because Impostor syndrome still strikes me from time to time 😭")
+          </p>
+        </BoxReveal>
       </div>
     </section>
   );
