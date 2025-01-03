@@ -7,8 +7,6 @@ const Main = () => {
     <main>
       <Header />
       <Hero />
-
-
       <About />
     </main>
   );

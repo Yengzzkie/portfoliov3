@@ -1,6 +1,5 @@
 import "./globals.css";
 import Navbar from "./components/ui/Navbar";
-// import { auth } from "./auth";
 
 export const metadata = {
   title: "Portfolio V3",
@@ -10,8 +9,6 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  // const session = await auth();
-  // console.log(session)
 
   return (
     <html lang="en">

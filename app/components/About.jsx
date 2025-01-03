@@ -7,9 +7,9 @@ const About = () => {
     <section className="flex flex-col w-full h-[70vh] max-w-5xl mx-auto px-4">
       <div className="flex items-center h-fit">
         <BoxReveal>
-          <h1 className="text-2xl md:text-6xl lg:text-6xl font-[900]">
+          <h1 className="text-4xl lg:text-6xl font-[900]">
             About
-            <span className="text-6xl font-bold text-violet-500">.</span>
+            <span className="text-6xl font-bold text-violet-500 mr-4">.</span>
           </h1>
         </BoxReveal>
         <div className="w-[80%] border border-zinc-500"></div>
