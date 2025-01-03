@@ -4,7 +4,7 @@ import DefaultButton from "./ui/Button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center w-full h-[70vh] max-w-5xl mx-auto px-4">
+    <section className="flex flex-col justify-center w-full h-[70vh] max-w-5xl mx-auto px-4">
       <div className="relative block overflow-hidden lg:overflow-visible">
         <div>
           <BoxReveal>
@@ -40,7 +40,7 @@ const Hero = () => {
           <DotGrid />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
