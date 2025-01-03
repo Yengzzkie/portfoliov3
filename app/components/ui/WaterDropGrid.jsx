@@ -52,7 +52,7 @@ export const DotGrid = () => {
     <div
       onClick={handleDotClick}
       style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-      className="grid w-fit "
+      className="relative grid w-fit z-[1]"
     >
       {dots}
     </div>

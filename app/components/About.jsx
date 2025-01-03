@@ -1,10 +1,32 @@
 import { BoxReveal } from "./ui/BoxReveal";
-import { DotGrid } from "./ui/WaterDropGrid";
-import DefaultButton from "./ui/Button";
+import { CodeSquareIcon } from "lucide-react";
+
+const FE_TOOLS = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "HTML",
+  "CSS",
+  "Javascript",
+  "HTML",
+  "CSS",
+  "Javascript",
+];
+
+const Badge = ({ text }) => {
+  return (
+    <span className="text-xs bg-[var(--primary-light)] px-1 py-0.5 mr-1.5 mb-1 rounded-sm">
+      {text}
+    </span>
+  );
+};
 
 const About = () => {
   return (
-    <section className="flex flex-col w-full h-[70vh] max-w-5xl mx-auto px-4">
+    <section
+      id="about"
+      className="flex flex-col w-full h-[70vh] max-w-5xl mx-auto px-4"
+    >
       <div className="flex items-center h-fit">
         <BoxReveal>
           <h1 className="text-4xl lg:text-6xl font-[900]">
@@ -13,6 +35,76 @@ const About = () => {
           </h1>
         </BoxReveal>
         <div className="w-[80%] border border-zinc-500"></div>
+      </div>
+
+      <div className="grid grid-cols-[auto,300px] gap-8 mt-8">
+        <BoxReveal>
+          <p className="">
+            <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
+              L
+            </span>
+            orem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            voluptate corrupti rerum officiis eum nobis veritatis perferendis
+            recusandae ipsum cumque libero beatae reprehenderit, esse atque
+            consequatur? Temporibus accusamus voluptatum aperiam facere, quaerat
+            laudantium quod deleniti dolorem numquam blanditiis consectetur
+            quidem sint expedita, asperiores magni dolor, rem et enim odit!
+            Optio ea maxime temporibus obcaecati voluptas! Est, corporis
+            nesciunt? Recusandae hic, vitae aliquid dicta aliquam aperiam vel
+            eius? A reprehenderit soluta est fugiat ipsum eveniet, eligendi
+            consectetur delectus eum vero. Consequuntur, fugiat ad voluptate
+            nobis magni enim minima a accusamus, quo nihil non id tempore
+            molestiae ex nemo labore. Sed, cumque atque dolorem itaque nobis
+            deserunt, eveniet veniam debitis porro minus corrupti.
+          </p>
+        </BoxReveal>
+
+        <div>
+        {/* FRONTEND TOOLS */}
+          <BoxReveal>
+            <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
+                  <p className="text-lg font-semibold">Frontend Tools</p>
+                </div>
+                <div className="flex flex-wrap">
+                  {FE_TOOLS.map((tool) => (
+                    <Badge text={tool} />
+                  ))}
+                </div>
+            </div>
+          </BoxReveal>
+
+          {/* BACKEND TOOLS */}
+          <BoxReveal>
+            <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
+                  <p className="text-lg font-semibold">Backend Tools</p>
+                </div>
+                <div className="flex flex-wrap">
+                  {FE_TOOLS.map((tool) => (
+                    <Badge text={tool} />
+                  ))}
+                </div>
+            </div>
+          </BoxReveal>
+
+          {/* DEVOPS TOOLS */}
+          <BoxReveal>
+            <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <CodeSquareIcon className="text-[var(--primary-dark)] bg-indigo-500 rounded-md mr-2" />{" "}
+                  <p className="text-lg font-semibold">Other Tools</p>
+                </div>
+                <div className="flex flex-wrap">
+                  {FE_TOOLS.map((tool) => (
+                    <Badge text={tool} />
+                  ))}
+                </div>
+            </div>
+          </BoxReveal>
+        </div>
       </div>
     </section>
   );

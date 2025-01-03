@@ -14,7 +14,10 @@
   --secondary-dark: #e0142f;
   --secondary-content: #189c3a;
   --dark-yellow: #9c7d18;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 body {
