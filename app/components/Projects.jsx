@@ -28,7 +28,7 @@ const About = () => {
 
       <div className="mt-10">
         <BoxReveal>
-          <p className="text-sm lg:text-base">
+          <p className="text-sm lg:text-base font-thin">
             <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
               T
             </span>

@@ -16,8 +16,9 @@ export const FEATURED_PROJECTS = [
         This is the third and full-stack version of Yengflix, built as an
         attempt to explore Next.js&apos;s full-stack features. It now includes
         user registration, authentication, and favorite list persistence through
-        a database. It has garnered 100+ user registrations on first day of
-        launch and still growing. The first and second version can be found{" "}
+        a database. It has garnered 100+ user registrations from different
+        countries on first day of launch and still growing. The first and second
+        version can be found{" "}
         <a
           href="https://yengflix-deprecated.netlify.app/"
           target="_blank"
@@ -53,7 +54,8 @@ export const FEATURED_PROJECTS = [
       "AceternityUI",
       "MagicUI",
       "Axios",
-      "Vercel"
+      "Vercel",
+      "TMDB API",
     ],
   },
   {
@@ -83,7 +85,7 @@ export const FEATURED_PROJECTS = [
       "Express",
       "MongoDB",
       "Consumet API",
-      "Netlify"
+      "Netlify",
     ],
   },
   {
@@ -101,7 +103,7 @@ export const FEATURED_PROJECTS = [
       "Restaurant website with an admin login, featuring an integrated order creation system and printing functionality.",
     img: "/pasalubong905.png",
     overview:
-      "This is a website I built for a local Filipino restaurant managed by my wife, aiming to replace their manual phone order tracking system ( as they still do it by handwriting ) with an integrated order creation and printing feature. The app is still under development and provides a modern solution to enhance their operations.",
+      "This is a website I built for a local Filipino restaurant managed by my wife, aiming to replace their manual phone order tracking system ( as they still do it by handwriting ) with an integrated order creation and printing feature. This app is still under development.",
     tools: [
       "NextJS",
       "next-auth",
@@ -113,37 +115,7 @@ export const FEATURED_PROJECTS = [
       "Axios",
       "prisma",
       "Supabase",
-      "Vercel"
-    ],
-  },
-  {
-    title: "Pasalubong 905",
-    name: (
-      <>
-        <span className="text-zinc-300 font-bold">Pasalubong</span>
-        <span className="text-red-500">9</span>
-        <span className="text-yellow-500">0</span>
-        <span className="text-blue-500">5</span>
-      </>
-    ),
-    link: "https://pasalubong905-fullstack.vercel.app/",
-    description:
-      "Yengflix v3 is a full-stack streaming platform offering a sleek and modern interface for enjoying seamless video content.",
-    img: "/pasalubong905.png",
-    tools: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "TailwindCSS",
-      "React",
-      "Zustand",
-      "Nodemailer",
-      "ShadCN",
-      "MaterialUI",
-      "AceternityUI",
-      "MagicUI",
-      "Chakra UI",
-      "Axios",
+      "Vercel",
     ],
   },
 ];

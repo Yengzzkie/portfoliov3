@@ -64,23 +64,18 @@ const About = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-[auto,300px] gap-8 mt-8">
         <BoxReveal>
-          <p className="text-sm lg:text-base">
+          <p className="text-sm font-thin lg:text-base">
             <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
-              L
+              I
             </span>
-            orem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            voluptate corrupti rerum officiis eum nobis veritatis perferendis
-            recusandae ipsum cumque libero beatae reprehenderit, esse atque
-            consequatur? Temporibus accusamus voluptatum aperiam facere, quaerat
-            laudantium quod deleniti dolorem numquam blanditiis consectetur
-            quidem sint expedita, asperiores magni dolor, rem et enim odit!
-            Optio ea maxime temporibus obcaecati voluptas! Est, corporis
-            nesciunt? Recusandae hic, vitae aliquid dicta aliquam aperiam vel
-            eius? A reprehenderit soluta est fugiat ipsum eveniet, eligendi
-            consectetur delectus eum vero. Consequuntur, fugiat ad voluptate
-            nobis magni enim minima a accusamus, quo nihil non id tempore
-            molestiae ex nemo labore. Sed, cumque atque dolorem itaque nobis
-            deserunt, eveniet veniam debitis porro minus corrupti.
+            am a career changer coming from a wide variety of industries including medical and logistics.
+            I have been self studying how to code for the past 2 years. I never took a single programming or Computer Science class
+            in college althought I was always pretty tech savvy, so I decided to give programming a shot to see if I liked it.
+          </p>
+          <p className="text-sm font-thin lg:text-base mt-4">
+            I started by teaching myself the basics starting with HTML and CSS, then Javascript for an hour or two every
+            after work by following the "The Odin Project". After a year or so, I decided to go full time by joining
+            Brainstation's bootcamp.
           </p>
         </BoxReveal>
 
