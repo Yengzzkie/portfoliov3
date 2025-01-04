@@ -1,6 +1,8 @@
+"use client"
 import { BoxReveal } from "./ui/BoxReveal";
 import { DotGrid } from "./ui/WaterDropGrid";
 import DefaultButton from "./ui/Button";
+import { downloadResume } from "../utils/downloadResume";
 
 const Hero = () => {
   return (
@@ -31,8 +33,9 @@ const Hero = () => {
           </BoxReveal>
           <BoxReveal>
             <DefaultButton
+              onDownload={downloadResume}
               cn={"px-4 py-3 bg-violet-500 hover:bg-violet-700 rounded-md"}
-              text={"Contact Me"}
+              text={"Download My Resume"}
             />
           </BoxReveal>
         </div>

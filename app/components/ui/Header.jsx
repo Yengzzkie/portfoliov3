@@ -7,14 +7,9 @@ import {
 } from "@tabler/icons-react";
 import DefaultButton from "./Button";
 import Link from "next/link";
+import { downloadResume } from "@/app/utils/downloadResume";
 
 const Header = () => {
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = "/Tech_CV.pdf";
-    link.download = "Tech_CV.pdf";
-    link.click();
-  };
 
   return (
     <div className="sticky top-0 flex items-center w-full px-4 py-6 bg-zinc-900/50 z-20 backdrop-blur-md">
