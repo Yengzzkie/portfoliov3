@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col w-full h-fit my-24 max-w-5xl mx-auto px-4 overflow-hidden"
+      className="flex flex-col w-full h-fit my-10 lg:my-24 max-w-5xl mx-auto px-4 overflow-hidden"
     >
       <div className="flex items-center h-fit">
         <div className="w-[80%] border border-zinc-500 pl-4"></div>
@@ -40,7 +40,7 @@ const About = () => {
         </BoxReveal>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8 mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-4 lg:gap-8 lg:mt-20">
         {FEATURED_PROJECTS.map((project) => (
           <div className="flex flex-col items-center px-18">
             <AnimatedCard
