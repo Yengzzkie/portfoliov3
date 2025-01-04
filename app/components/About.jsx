@@ -36,6 +36,7 @@ const DEVOPS_TOOLS = [
   "Supabase",
   "Netlify",
   "Vercel",
+  "CI/CD"
 ];
 
 const Badge = ({ text }) => {
