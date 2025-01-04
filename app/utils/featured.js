@@ -9,7 +9,7 @@ export const FEATURED_PROJECTS = [
     ),
     link: "https://yengflix.com/",
     description:
-      "Yengflix v3 is a full-stack streaming platform offering a sleek and modern interface for enjoying seamless video content.",
+      "Yengflix v3 is a full-stack streaming platform named after myself (nickname: 'Yeng').",
     img: "/yengflixv3.png",
     overview: (
       <>
