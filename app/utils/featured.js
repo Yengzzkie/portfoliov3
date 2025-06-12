@@ -1,5 +1,36 @@
 export const FEATURED_PROJECTS = [
   {
+    title: "NadaMart.ca",
+    name: (
+      <>
+        <span className="text-[#9c27b0] font-bold">NadaMart.</span>
+        <span className="text-[#e9d4ff] font-thin">ca</span>
+      </>
+    ),
+    link: "https://nadamart.vercel.app/",
+    description:
+      "NadaMart.ca is a community-driven classifieds platform where users can give away unwanted items for free",
+    img: "/nadamartca.png",
+    overview:
+      "This is my Capstone project at Brainstation. The goal of this app is to encourage reusability by making it easy for people to pass on items they no longer need to others who can make use of them. Built with a modern web stack, NadaMart.ca provides a simple and intuitive user experience for posting, browsing, and claiming free items in your local area.",
+    tools: [
+      "NextJS",
+      "next-auth",
+      "jsonwebtoken",
+      "bcryptjs",
+      "prisma",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Zustand",
+      "Material UI",
+      "Material-tailwind",
+      "AceternityUI",
+      "Axios",
+      "Vercel",
+      "Supabase"
+    ],
+  },
+  {
     title: "YENGFLIXv3",
     name: (
       <>
