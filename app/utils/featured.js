@@ -129,7 +129,7 @@ export const FEATURED_PROJECTS = [
         <span className="text-blue-500">5</span>
       </>
     ),
-    link: "https://pasalubong905-fullstack.vercel.app/",
+    link: "https://pasalubong-905.vercel.app/",
     description:
       "Restaurant website with an admin login, featuring an integrated order creation system and printing functionality.",
     img: "/pasalubong905.png",
