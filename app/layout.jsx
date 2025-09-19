@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "./components/ui/Navbar";
 
 export const metadata = {
-  title: "Portfolio V3",
+  title: "Manuel Gatchalian - Full Stack Software Engineer",
   description: "My Portfolio",
   keywords: "yengflix, movie streaming, free watch, free streaming",
   referrer: "origin"
